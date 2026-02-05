@@ -12,7 +12,7 @@ const app = express();
 // Middleware
 app.use(cors({
    credentials: true,
-    origin :  "https://me-api-playground-frontend-7os4.onrender.com"
+    origin :  process.env.FRONTEND_URL
 }))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
